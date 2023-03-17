@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+func main() {
+	var p float64
+	var a float64
+	fmt.Print("Qual é o seu peso: ")
+	fmt.Scan(&p)
+	fmt.Print("Qual é a sua altura: ")
+	fmt.Scan(&a)
+	fmt.Print("Seu IMC é: ", p/(a*a))
+}
