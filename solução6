@@ -1,0 +1,10 @@
+package main
+
+import "fmt"
+
+func main() {
+	var s1 float64
+	fmt.Print("Qual é o seu salário? ")
+	fmt.Scan(&s1)
+	fmt.Print("Seu salário com aumento de 15% é: ", s1*1.15)
+}
