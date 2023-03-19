@@ -1,0 +1,11 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 int
+	fmt.Print("Informe algum número inteiro ")
+	fmt.Scan(&n1)
+	fmt.Println("O sucessor desse número é igual a ", n1+1)
+	fmt.Println("O antecessor desse número é igual a ", n1-1)
+}
