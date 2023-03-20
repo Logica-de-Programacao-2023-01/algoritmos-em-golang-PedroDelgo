@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 int
+	var n2 int
+	fmt.Print("Escreva um número inteiro: ")
+	fmt.Scan(&n1)
+	fmt.Print("Escreva um segundo número inteiro: ")
+	fmt.Scan(&n2)
+	if n1 > n2 {
+		fmt.Println("O seu primeiro número é maior que o segundo")
+	} else if n1 < n2 {
+		fmt.Println("O seu segundo número é maior que o primeiro")
+	} else {
+		fmt.Println("O seu primeiro número e o segundo são iguas ")
+	}
+}
+
