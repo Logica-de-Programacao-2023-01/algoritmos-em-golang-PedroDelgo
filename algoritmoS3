@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 int
+	var C int
+	fmt.Print("Escreva um número inteiro: ")
+	fmt.Scan(&n1)
+	C = n1 % 2
+	if C == 0 {
+		fmt.Print("O seu número é par ")
+	} else {
+		fmt.Print("O seu número é ímpar")
+	}
+}
+
