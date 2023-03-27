@@ -1,0 +1,33 @@
+package main
+
+import "fmt"
+
+func main() {
+	var p1 float64
+	var a1 float64
+	var s1 string
+	var IMC float64
+	fmt.Print("Digite seu peso em Kg: ")
+	fmt.Scan(&p1)
+	fmt.Print("Digite sua altura: ")
+	fmt.Scan(&a1)
+	fmt.Print("Digite seu sexo, escreva M para masculino e F para feminino: ")
+	fmt.Scan(&s1)
+	IMC = p1 / (a1 * a1)
+	if s1 == "M" {
+		if IMC <= 18.5 {
+			fmt.Print("O seu IMC é", IMC, "e você esta abaixo do peso ideal.")
+		} else if IMC >= 25 {
+			fmt.Print("O seu IMC é", IMC, "e você esta acima do peso ideal.")
+		} else {
+			fmt.Print("O seu IMC é", IMC, "e você esta no peso ideal!.")
+		}
+	} else if s1 == "F" {
+	} else if IMC <= 18.5 {
+		fmt.Print("O seu IMC é", IMC, "e você esta abaixo do peso ideal.")
+	} else if IMC >= 24 {
+		fmt.Print("O seu IMC é", IMC, "e você esta acima do peso ideal.")
+	} else {
+		fmt.Print("O seu IMC é", IMC, "e você esta no peso ideal!.")
+	}
+}
