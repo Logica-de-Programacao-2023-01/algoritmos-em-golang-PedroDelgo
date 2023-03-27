@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 int
+	var n2 int
+	fmt.Print("Digite um número inteiro: ")
+	fmt.Scan(&n1)
+	fmt.Print("Digite outro número inteiro: ")
+	fmt.Scan(&n2)
+	if n1 >= 0 && n2 >= 0 {
+		fmt.Print("O resultado da multiplicação desses dois números é igual a ", n1*n2)
+	} else {
+		fmt.Print("A soma desses dois números é igual a ", n1+n2)
+	}
+}

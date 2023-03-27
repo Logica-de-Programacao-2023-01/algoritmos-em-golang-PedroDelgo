@@ -1,0 +1,46 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 float64
+	var n2 float64
+	var n3 float64
+	fmt.Print("Digite um número real: ")
+	fmt.Scan(&n1)
+	fmt.Print("Digite mais um número real: ")
+	fmt.Scan(&n2)
+	fmt.Print("digite mais um número real: ")
+	fmt.Scan(&n3)
+	if n1 > n2 && n1 > n3 && n2 > n3 {
+		fmt.Println("A ordem crescentes dos números reias informados são: ")
+		fmt.Println(n1)
+		fmt.Println(n2)
+		fmt.Println(n3)
+	} else if n1 > n2 && n1 > n3 && n2 > n3 {
+		fmt.Println("A ordem crescentes dos números reias informados são: ")
+		fmt.Println(n1)
+		fmt.Println(n3)
+		fmt.Println(n2)
+	} else if n2 > n1 && n2 > n3 && n1 > n3 {
+		fmt.Println("A ordem crescentes dos números reias informados são: ")
+		fmt.Println(n2)
+		fmt.Println(n1)
+		fmt.Println(n3)
+	} else if n2 > n1 && n2 > n3 && n3 > n1 {
+		fmt.Println("A ordem crescentes dos números reias informados são: ")
+		fmt.Println(n2)
+		fmt.Println(n3)
+		fmt.Println(n1)
+	} else if n3 > n1 && n3 > n2 && n2 > n1 {
+		fmt.Println("A ordem crescentes dos números reias informados são: ")
+		fmt.Println(n3)
+		fmt.Println(n2)
+		fmt.Println(n1)
+	} else if n3 > n1 && n3 > n2 && n1 > n2 {
+		fmt.Println("A ordem crescentes dos números reias informados são: ")
+		fmt.Println(n3)
+		fmt.Println(n1)
+		fmt.Println(n2)
+	}
+}

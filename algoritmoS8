@@ -1,0 +1,28 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 int
+	fmt.Print("Digite um número inteiro: ")
+	fmt.Scan(&n1)
+	if n1 < 1 {
+		fmt.Print("Por favor digite um número entre 1 e 7. ")
+	} else if n1 > 7 {
+		fmt.Print("Por favor digite um número entre 1 e 7. ")
+	} else if n1 == 1 {
+		fmt.Print("O número que você digitou é equivalente a domingo.")
+	} else if n1 == 2 {
+		fmt.Print("O número que você digitou é equivalente a segunda feira.")
+	} else if n1 == 3 {
+		fmt.Print("O número que você digitou é equivalente a terça feira.")
+	} else if n1 == 4 {
+		fmt.Print("O número que você digitou é equivalente a quarta feira.")
+	} else if n1 == 5 {
+		fmt.Print("O número que você digitou é equivalente a quinta feira.")
+	} else if n1 == 6 {
+		fmt.Print("O número que você digitou é equivalente a sexta feira.")
+	} else {
+		fmt.Print("O número que você digitou é equivalente a sábado.")
+	}
+}

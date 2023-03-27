@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 int
+	var c1 int
+	var c2 int
+	fmt.Print("Digite um número inteiro: ")
+	fmt.Scan(&n1)
+	c1 = n1 % 3
+	c2 = n1 % 5
+	if c1 == 0 && c2 == 0 {
+		fmt.Print("Seu número é um multiplo de 3 e 5 ")
+	} else if c1 == 0 && c2 != 0 {
+		fmt.Print("Seu número é um multiplo de 3 ")
+	} else if c1 != 0 && c2 == 0 {
+		fmt.Print("Seu número é um multiplo de 5")
+	} else {
+		fmt.Print("Seu número não nem multiplo de 3 e nem de 5")
+	}
+}

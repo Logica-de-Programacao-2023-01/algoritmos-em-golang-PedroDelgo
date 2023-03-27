@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	var s1 float64
+	fmt.Print("Digite seu salário: ")
+	fmt.Scan(&s1)
+	if s1 > 1000 {
+		fmt.Print("Seu novo salário com um aumento de 5% é igaul a ", s1*1.05)
+	} else {
+		fmt.Print("Seu salário com um aumento de 10% é igual a ", s1*1.10)
+	}
+}
